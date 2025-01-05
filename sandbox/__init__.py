@@ -12,7 +12,6 @@ __all__ = ['build', 'run', 'get_container', 'Image', 'Container', 'Python', 'Ubu
 
 
 lib_path = '/'.join(__file__.split('/')[:-1])
-print(lib_path)
 
 
 def build(dockerfile: Type[IMAGES], path: str=f'{lib_path}/', suffix_len: int=16) -> Image:
